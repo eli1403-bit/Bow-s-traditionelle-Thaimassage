@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bow's Thaimassage - Galerie & Einblicke</title>
+    <style>
+        /* Eigenständiges, offenes Wellness-Layout ohne einengende Boxen */
+        body {
+            background-color: #f4f7f6;
+            color: #2d3748;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Schlichter, eleganter Header-Bereich */
+        .galerie-header {
+            text-align: center;
+            padding: 40px 20px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            box-sizing: border-box;
+        }
+
+        .galerie-header h1 {
+            color: #234e52;
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Zentrale Steuerung der Navigation */
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .nav-btn {
+            background-color: #ffffff;
+            color: #2c7a7b;
+            border: 2px solid #2c7a7b;
+            padding: 8px 22px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .nav-btn.active, .nav-btn:hover {
+            background-color: #2c7a7b;
+            color: #ffffff;
+        }
+
+        /* Der große, frei scrollbare Feed (Viel breiter für die Bilder) */
+        .galerie-feed {
+            max-width: 950px; /* Macht die Bilder extrem breit und mächtig */
+            width: 90%;
+            margin: 40px 0;
+            box-sizing: border-box;
+        }
+
+        /* Ein einzelner, großer Bild-Fokus-Block */
+        .fokus-beitrag {
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden; /* Schneidet das Bild sauber an den abgerundeten Ecken ab */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+            margin-bottom: 50px; /* Großer Abstand beim Herunterscrollen */
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease;
+        }
+
+        .fokus-beitrag:hover {
+            transform: translateY(-5px); /* Kleiner, edler Schwebe-Effekt */
+        }
+
+        /* Die riesigen, breiten Querformat-Bilder im Fokus */
+        .riesen-bild {
+            width: 100%;
+            height: 480px; /* Extrem hoch und breit */
+            object-fit: cover; /* Verhindert Verzerrungen */
+            display: block;
+        }
+
+        /* Die edle Text-Banderole direkt unter dem Bild */
+        .text-bereich {
+            padding: 30px;
+            background-color: #ffffff;
+            border-top: 4px solid #68d391; /* Grüner Spa-Akzentstreifen */
+        }
+
+        .text-bereich h2 {
+            margin: 0 0 12px 0;
+            color: #234e52;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .text-bereich p {
+            margin: 0;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NEUER HEADER & NAVI -->
+    <div class="galerie-header">
+        <h1>Bow's Thaimassage</h1>
+        <div style="color: #718096; letter-spacing: 1px;">Impressionen & Wohlbefinden</div>
+        
+        <nav>
+            <a href="startseite.html" class="nav-btn">Startseite</a>
+            <a href="preise.html" class="nav-btn">Preise</a>
+            <a href="galerie.html" class="nav-btn active">Galerie</a>
+        </nav>
+    </div>
+
+    <!-- DER GROSSE BILDER-FEED ZUM SCROLLEN -->
+    <div class="galerie-feed">
+
+        <!-- FOKUS BILD 1 -->
+        <div class="fokus-beitrag">
+            <img class="riesen-bild" src="Bild5.avif" alt="Traditionelle Thaimassage Atmosphäre">
+            <div class="text-bereich">
+                <h2>Eine Oase für die Sinne</h2>
+                <p>Treten Sie ein und vergessen Sie den Alltag. Unser harmonisch eingerichteter Behandlungsraum empfängt Sie mit beruhigenden Düften traditioneller Kräuteröle und sanftem Kerzenschein für Ihre perfekte Auszeit.</p>
+            </div>
+        </div>
+
+        <!-- FOKUS BILD 2 -->
+        <div class="fokus-beitrag">
+            <img class="riesen-bild" src="Bild3.avif" alt="Wellness Entspannung Griffe">
+            <div class="text-bereich">
+                <h2>Traditionelle Massagekunst</h2>
+                <p>Unsere zertifizierten Griffe und Dehnungen basieren auf der jahrhundertealten thailändischen Heilkunst. Wir lösen tiefe Muskelverspannungen gezielt auf und bringen den Energiefluss Ihres Körpers wieder vollkommen ins Gleichgewicht.</p>
+            </div>
+        </div>
+
+        <!-- FOKUS BILD 3 -->
+        <div class="fokus-beitrag">
+            <img class="riesen-bild" src="Bild4.avif" alt="Spa Elemente Steine Blüten">
+            <div class="text-bereich">
+                <h2>Die Kraft der Natur</h2>
+                <p>Wir verwenden ausschließlich naturbelassene Massageöle, ausgewählte Spa-Elemente und heiße Zen-Steine. Diese Kombination revitalisiert Ihre Haut und schenkt Ihnen langanhaltende Vitalität und neue Lebensenergie.</p>
+            </div>
+        </div>
+
+    </div> <!-- Ende vom galerie-feed -->
+
+</body>
+</html>
+
